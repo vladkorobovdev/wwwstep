@@ -1,0 +1,269 @@
+@media screen and (max-width: 960px) {
+    .benefits {
+        margin-bottom: 75px;
+    }
+
+    .benefits__card {
+        margin-bottom: 60px;
+    }
+    
+    .search-form__field {
+        margin-bottom: 24px;
+    }
+
+    .benefits__cards {
+        padding: 0 15px;
+        grid-column-gap: 35px;
+    }
+
+    .benefits__title {
+        padding: 55px 15px;
+    }
+
+    .benefits__wrap {
+        box-shadow: none;
+    }
+
+    .places__card_size_lg {
+        grid-column: span 6;
+    }
+
+    .places__card_size_sm {
+        grid-column: span 6;
+    }
+
+    .tours__tour {
+        grid-column-gap: 35px;
+    }
+
+    .tours__info {
+        padding-left: 0;
+    }
+
+    .tour__title {
+        margin-bottom: 15px;
+    }
+
+    .tour__desc {
+        margin-bottom: 15px;
+    }
+
+    .top__cards {
+        grid-column-gap: 25px;
+        grid-row-gap: 55px;
+    }
+
+    .top__card {
+        grid-column: span 3;
+    }
+
+    .top__card-pic {
+        margin-bottom: 25px;
+    }
+
+    .footer {
+        padding: 60px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    .section-title::after {
+        width: 78px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__wrapper {
+        padding-top: 28px;
+    }
+
+    .header__nav {
+        width: 100%;
+        height: 100%; /* Так как теперь позиция фиксированная, высота и ширина берется не у родителя, а у ВСЕГО документа. */
+        position: fixed; /* К сведению: position: absolute выравнивает относительно родителя, у которого значение position: relative; А position: fixed; всегда выравнивает относительно экрана */
+        top: 0;
+        left: 0;
+        background: #000;
+        z-index: 10;
+        padding: 75px;
+        transition: .2s all linear;
+        transform: translateX(100%); /* Теперь открытое бургер меню на черном фоне находится якобы за экраном справа (если надо было сделать так, чтобы меню было слева и выезжало слева, тогда нужно было бы прописать в скобках -100%). Впоследствии он будет выезжать на основной экран и занимать 100% ширины и выосты при нажатии на закрытый бургер. Ширина данного блока учитивыает также и все пэддинги */
+    }
+
+    .header__nav_active {
+        transform: translateX(0);
+    }
+
+    .header__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .header__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header__link {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .header__nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header__nav-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .header__nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .intro {
+        padding-top: 125px;
+    }
+
+    .intro__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .intro__subtitle {
+        font-size: 14px;
+    }
+
+    .search-form__field {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 12px;
+        background: transparent url(../img/svg/circle-item.svg) no-repeat left top;
+    }
+
+    .search-form__field::placeholder {
+        font-size: 16px;
+    }
+
+    .search-form__submit {
+        width: 100%;
+    }
+
+    .benefits {
+        margin-bottom: 36px;
+    }
+
+    .benefits__card {
+        grid-column: span 3;
+        margin-bottom: 40px;
+    }
+
+    .benefits__card-pic {
+        margin-bottom: 20px;
+    }
+
+    .benefits__card-title {
+        margin-bottom: 12px;
+    }
+
+    .benefits__card-desc {
+        margin-bottom: 20px;
+    }
+
+    .places {
+        margin-bottom: 76px;
+    }
+
+    .places__card-pic_size_lg, .places__card-pic_size_sm {
+        height: 230px;
+    }
+
+    .places__view-all {
+        margin-bottom: 25px;
+    }
+
+    .places__caption {
+        margin-bottom: 0;
+    }
+
+    .tours {
+        margin-bottom: 76px;
+    }
+
+    .tour__pic, .tour__info {
+        grid-column: span 2;
+    }
+
+    .tour__pic {
+        margin-bottom: 12px;
+    }
+
+    .tour__pic_mob-first {
+        grid-row-start: -1; /* Эта запись меняет изображение и текст местами. Теперь вторая картинка также идет сначала, ка ки первая, а затем уже ее текст */
+    }
+
+    .tours__tour {
+        margin-bottom: 30px;
+    }
+
+    .top {
+        margin-bottom: 76px;
+    }
+
+    .top__card {
+        grid-column: span 6;
+    }
+
+    .top__card-stats {
+        max-width: 386px;
+    }
+
+    .top__card-desc {
+        margin-bottom: 15px;
+    }
+
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .footer__nav {
+        width: 100%;
+    }
+
+    .footer__menu {
+        width: 50%;
+        margin-bottom: 24px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .header__nav {
+        padding: 75px 30px;
+    }
+}
